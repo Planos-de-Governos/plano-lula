@@ -151,6 +151,38 @@ tr:last-child td{border-bottom:none}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .remember li::before{color:#1a0f0d}}
 :root[data-theme="dark"] .remember li::before{color:#1a0f0d}
 
+/* glossary */
+.term{scroll-margin-top:80px}
+.term h3{font-size:18px;margin:0 0 6px}
+.term .one{font-weight:700;margin:0 0 8px}
+.term p{margin:0 0 8px;font-size:15px}
+.term .ex{background:var(--gold-soft);border-radius:10px;padding:9px 12px;margin-top:10px}
+.term .ex b{color:var(--gold)}
+.term .why{background:var(--blue-soft);border-radius:10px;padding:9px 12px;margin-top:8px}
+.term .why b{color:var(--blue)}
+.term ul{margin:4px 0 8px;padding-left:20px;font-size:15px}
+.term li{margin:4px 0}
+.term.wide{grid-column:1/-1}
+.lk{display:inline-block;font-size:12px;font-weight:700;text-decoration:none;color:var(--blue);background:var(--blue-soft);
+  padding:1px 8px;border-radius:999px;margin-left:4px;white-space:nowrap}
+.lk:hover{text-decoration:underline}
+.analogy .seg{display:flex;border-radius:10px;overflow:hidden;margin:12px 0 6px;font-size:13px;font-weight:700;color:#fff}
+.analogy .seg div{padding:10px 12px}
+.analogy .fix{flex:80;background:var(--accent)}
+.analogy .free{flex:20;background:var(--green)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .analogy .seg{color:#1a0f0d}}
+:root[data-theme="dark"] .analogy .seg{color:#1a0f0d}
+.mini{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:10px}
+.mini > div{border-radius:10px;padding:10px 12px;font-size:14.5px;border:1px solid var(--line)}
+.mini .m-plan{background:var(--blue-soft)}
+.mini .m-say{background:var(--green-soft)}
+.mini .m-crit{background:var(--accent-soft)}
+.mini .m-open{background:var(--gold-soft)}
+.mini b.l{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+.mini .m-plan b.l{color:var(--blue)} .mini .m-say b.l{color:var(--green)} .mini .m-crit b.l{color:var(--accent)} .mini .m-open b.l{color:var(--gold)}
+.mini ul{margin:0;padding-left:18px}
+.mini li{margin:3px 0}
+
 footer{padding:30px 0 50px;color:var(--muted);font-size:14px}
 footer ul{padding-left:18px}
 footer li{margin:4px 0;word-break:break-word}
@@ -175,6 +207,7 @@ small.note{color:var(--muted);display:block;margin-top:8px;font-size:13px}
 <nav class="toc" aria-label="Seções">
   <div class="wrap">
     <a href="#resumo">Resumo</a>
+    <a href="#termos">Entenda os termos</a>
     <a href="#areas">Por área</a>
     <a href="#como">Como faria</a>
     <a href="#cortes">E os cortes?</a>
@@ -200,6 +233,154 @@ small.note{color:var(--muted);display:block;margin-top:8px;font-size:13px}
   <div class="callout">
     <strong class="k">A tese central do plano</strong>
     <p>Crescer com investimento (infraestrutura, indústria, crédito), reduzir desigualdade com programas sociais e salário mínimo, e fechar a conta com <strong>crescimento + justiça tributária</strong>, sem prometer um grande corte de despesas.</p>
+  </div>
+</section>
+
+<!-- ENTENDA OS TERMOS -->
+<section id="termos">
+  <h2>Entenda os termos</h2>
+  <p class="sub">Palavras como "arcabouço fiscal" e "dívida bruta" aparecem muito no debate, mas ninguém explica. Aqui está cada uma em <strong>linguagem simples</strong>, com exemplo. Não precisa entender de economia.</p>
+
+  <div class="card analogy">
+    <h3>Primeiro, pense no orçamento como o de uma família</h3>
+    <p style="margin:0;font-size:15px">Imagine uma família que ganha <strong>R$ 3.000 por mês</strong>. Aluguel, luz, água, mercado e escola são contas que precisam ser pagas todo mês, mesmo que a família não queira. Só o que <strong>sobra</strong> pode ser gasto com o que ela escolher: um conserto, um curso, um passeio. O orçamento do governo funciona de forma parecida.</p>
+    <div class="seg" role="img" aria-label="Exemplo: 80% contas fixas, 20% sobra">
+      <div class="fix">Contas fixas: R$ 2.400</div>
+      <div class="free">Sobra: R$ 600</div>
+    </div>
+    <small class="note" style="margin-top:0">Exemplo ilustrativo, sem relação com os números reais do governo. "Contas fixas" = despesas obrigatórias. "Sobra" = despesas discricionárias.</small>
+  </div>
+
+  <div class="grid g2" style="margin-top:12px">
+
+    <article class="card term" id="t-arcabouco">
+      <h3>Arcabouço fiscal</h3>
+      <p class="one">É a regra que limita quanto o governo pode aumentar seus gastos a cada ano.</p>
+      <p>Em resumo, o gasto pode crescer até cerca de 70% do aumento da arrecadação, mas sempre dentro de uma faixa: <strong>no mínimo 0,6% e no máximo 2,5% acima da inflação</strong>. Há também metas para o resultado das contas no fim do ano. Ele substituiu o "teto de gastos" de 2016, que só deixava o gasto subir o equivalente à inflação.</p>
+      <p class="ex"><b>Exemplo:</b> se a inflação do ano foi 4% e a regra permite 2% além dela, o gasto total pode subir cerca de 6% naquele ano.</p>
+      <p class="why"><b>Por que importa na eleição:</b> o plano de Lula diz que vai manter essa regra. Flávio Bolsonaro quer reformulá-la e a chama de "calabouço fiscal".</p>
+    </article>
+
+    <article class="card term" id="t-inflacao">
+      <h3>Crescer "acima da inflação"</h3>
+      <p class="one">Significa crescer mais do que os preços subiram.</p>
+      <p>Se tudo ficou 4% mais caro e o gasto do governo subiu só 4%, ele consegue comprar o mesmo de antes (crescimento real zero). Se o gasto subiu 6%, ele consegue comprar 2% a mais: isso é crescer "2% acima da inflação".</p>
+      <p class="ex"><b>Exemplo:</b> o pão subiu 4%. Se seu salário subiu 6%, você ganhou poder de compra. Se subiu 4%, ficou no mesmo lugar.</p>
+    </article>
+
+    <article class="card term" id="t-obrigatorias">
+      <h3>Despesas obrigatórias que "crescem sozinhas"</h3>
+      <p class="one">São contas que a lei manda pagar todo ano e que aumentam automaticamente.</p>
+      <p>Entram aposentadorias e pensões, o BPC, salários de servidores e os valores mínimos para saúde e educação. Elas "crescem sozinhas" porque a regra já manda reajustar: quando o salário mínimo sobe, sobem também as aposentadorias de 1 salário mínimo e o BPC. E, com mais idosos, mais gente passa a receber.</p>
+      <p class="why"><b>Por que comprime o resto:</b> como o total que pode crescer é limitado pelo arcabouço, quanto mais as contas fixas aumentam, menos sobra para obras e programas novos. É o argumento dos economistas citados no guia. O plano de Lula responde que o salário mínimo maior aumenta a renda e o consumo, o que ajuda a economia a crescer.</p>
+    </article>
+
+    <article class="card term" id="t-minimo">
+      <h3>Salário mínimo real, BPC e pisos</h3>
+      <ul>
+        <li><strong>Salário mínimo real:</strong> reajuste acima da inflação, ou seja, o salário compra mais do que antes.</li>
+        <li><strong>BPC (Benefício de Prestação Continuada):</strong> um salário mínimo por mês para idosos de baixa renda (a partir de 65 anos) e pessoas com deficiência de baixa renda.</li>
+        <li><strong>Pisos de saúde e educação:</strong> uma parte mínima do que o governo arrecada que, por lei, precisa ir para essas áreas.</li>
+        <li><strong>Piso do magistério:</strong> o menor salário nacional para professores da rede pública.</li>
+      </ul>
+    </article>
+
+    <article class="card term" id="t-novas">
+      <h3>Promessas novas: o que é cada uma</h3>
+      <ul>
+        <li><strong>Farmácia Popular:</strong> programa que dá remédios de graça em farmácias conveniadas. A novidade é incluir exames de acompanhamento, como os de hipertensão e diabetes.</li>
+        <li><strong>Tempo integral:</strong> escola em que o aluno fica o dia todo (pelo menos 7 horas por dia), com mais atividades.</li>
+        <li><strong>IFs (Institutos Federais):</strong> escolas públicas federais de ensino técnico e tecnológico. O plano prevê mais 111.</li>
+        <li><strong>MCMV (Minha Casa, Minha Vida):</strong> programa de financiamento de moradia, com ajuda do governo para famílias de baixa e média renda.</li>
+        <li><strong>Novo PAC:</strong> conjunto de obras (estradas, saneamento, escolas, moradia) com dinheiro do governo, de estatais e de empresas privadas.</li>
+      </ul>
+      <p class="why"><b>Por que aparecem como pressão:</b> cada uma custa dinheiro por vários anos, e o plano não diz quanto.</p>
+    </article>
+
+    <article class="card term" id="t-divida">
+      <h3>Dívida bruta e "% do PIB"</h3>
+      <p class="one">É tudo o que o governo deve, comparado com o tamanho da economia.</p>
+      <p>O <strong>PIB</strong> é a soma de tudo o que o país produz em um ano. A <strong>dívida bruta</strong> reúne o que União, INSS, estados e municípios devem. Dizer que ela é <strong>82,9% do PIB</strong> é dizer que a dívida equivale a quase um ano inteiro de tudo o que o Brasil produz.</p>
+      <p class="ex"><b>Exemplo:</b> é como uma família que deve cerca de 10 meses do seu salário. Dá para viver assim, mas parte do dinheiro vai para pagar juros.</p>
+      <p class="why"><b>Por que importa:</b> quanto maior a dívida, mais juros o governo paga e menos sobra para serviços. E quem empresta cobra mais caro se desconfiar. Segundo a Gazeta do Povo, ela era 71,4% no início do governo Lula; o Banco Central registrou 82,9% em agosto.</p>
+    </article>
+
+    <article class="card term" id="t-juros">
+      <h3>Déficit primário, juros e Selic</h3>
+      <ul>
+        <li><strong>Déficit primário:</strong> quando o governo gasta mais do que arrecada, sem contar os juros da dívida.</li>
+        <li><strong>Juros da dívida:</strong> o "aluguel" que o governo paga pelo dinheiro que pegou emprestado.</li>
+        <li><strong>Selic:</strong> a taxa básica de juros do país, definida pelo Banco Central. Quando ela sobe, a dívida do governo fica mais cara.</li>
+      </ul>
+      <p class="ex"><b>Números:</b> em 12 meses, o déficit primário foi de R$ 82,1 bi, e os juros nominais somaram R$ 1,18 tri.</p>
+      <p class="why"><b>O debate:</b> quem defende o governo diz que os juros altos são o maior peso. Economistas críticos dizem que o aumento do gasto pressiona os juros para cima.</p>
+    </article>
+
+    <article class="card term" id="t-emendas">
+      <h3>Emendas parlamentares e orçamento discricionário</h3>
+      <p class="one">São verbas do orçamento cujo destino é indicado por deputados e senadores.</p>
+      <p>Um parlamentar pode indicar, por exemplo, dinheiro para um posto de saúde ou uma obra na sua região. Muitas são <strong>impositivas</strong>: o governo é obrigado a pagar. O <strong>orçamento discricionário</strong> é a parte que o governo pode escolher onde gastar (o restante já está comprometido por lei).</p>
+      <p class="ex"><b>Números:</b> em 2026, as emendas somam R$ 50 bi, cerca de 1/5 do orçamento discricionário do Executivo, segundo o plano.</p>
+      <p class="why"><b>Os dois lados:</b> o plano de Lula critica o modelo, dizendo que dispersa recursos e reduz a eficiência. Parlamentares costumam defender que as emendas levam dinheiro a quem conhece a realidade local.</p>
+    </article>
+
+    <article class="card term" id="t-tributaria">
+      <h3>Justiça tributária</h3>
+      <p class="one">É cobrar mais imposto de quem ganha mais e aliviar quem ganha menos.</p>
+      <p>Exemplos do plano: isentar do Imposto de Renda quem ganha até R$ 5 mil e tributar <strong>offshores</strong> (empresas ou contas no exterior) e <strong>fundos exclusivos</strong> (fundos de investimento criados para pessoas muito ricas).</p>
+    </article>
+
+    <article class="card term" id="t-pec">
+      <h3>PEC</h3>
+      <p class="one">Proposta de Emenda à Constituição: uma mudança na Constituição.</p>
+      <p>É mais difícil de aprovar que uma lei comum. Precisa de <strong>3/5 dos votos em cada casa</strong> (308 deputados e 49 senadores), em dois turnos. O presidente não sanciona: quem promulga é o próprio Congresso.</p>
+      <p class="ex"><b>Exemplo:</b> o fim da escala 6x1 e a PEC da Segurança Pública.</p>
+    </article>
+
+    <article class="card term" id="t-credito">
+      <h3>Concessão, crédito público e crédito subsidiado</h3>
+      <ul>
+        <li><strong>Concessão:</strong> o governo continua dono da estrada, da ferrovia ou do porto, mas uma empresa privada investe e opera por anos e cobra pedágio ou tarifa. É diferente de privatização, em que o bem é vendido.</li>
+        <li><strong>Crédito público:</strong> empréstimos de bancos do governo (BNDES, Caixa, Banco do Brasil) para estimular investimento.</li>
+        <li><strong>Crédito subsidiado:</strong> empréstimo em que o governo paga parte do custo, para que os juros fiquem menores para quem toma o empréstimo.</li>
+      </ul>
+    </article>
+
+    <article class="card term wide" id="tesouraco">
+      <h3>Tesouraço (proposta de Flávio Bolsonaro)</h3>
+      <p class="one">É o nome que Flávio Bolsonaro deu ao seu pacote de corte de gastos públicos.</p>
+      <p>Pelo nome, a ideia é a de uma "tesoura" passando pelas despesas do governo. No programa dele, aparece como um corte profundo e "por todos os lados" para colocar as contas em ordem, junto com uma meta de crescimento de 4% ao ano e a promessa de reduzir impostos.</p>
+
+      <div class="mini">
+        <div class="m-plan"><b class="l">O que o plano dele diz</b>
+          <ul>
+            <li>Extinguir ao menos 10 ministérios</li>
+            <li>Reduzir cargos comissionados e despesas administrativas</li>
+            <li>Criar uma nova regra fiscal, focada na dívida, no lugar do arcabouço</li>
+            <li>Retomar privatizações, avaliando caso a caso</li>
+            <li>Reduzir impostos como o IOF</li>
+            <li>Não retirar direitos trabalhistas</li>
+          </ul>
+        </div>
+        <div class="m-open"><b class="l">O que não está definido</b>
+          <ul>
+            <li>Quais despesas seriam cortadas</li>
+            <li>Quanto o corte economizaria</li>
+            <li>Data ou meta numérica</li>
+            <li>Como compensar a arrecadação menor com cortes de impostos</li>
+          </ul>
+        </div>
+        <div class="m-say"><b class="l">O que quem defende diz</b>
+          Com a dívida alta, é preciso ajustar as contas; enxugar a máquina e reduzir impostos de quem produz abriria espaço para o investimento privado e o crescimento. Flávio disse que não fará economia em cima das pessoas mais carentes.
+        </div>
+        <div class="m-crit"><b class="l">O que críticos afirmam</b>
+          A campanha de Lula e economistas próximos dizem que o corte poderia atingir saúde, educação e benefícios, e lembram a estratégia do ministro Paulo Guedes de "desvincular, desindexar e desobrigar" despesas, segundo um colunista do Poder360. Lula diz que cortes anunciados pelas elites costumam atingir o povo e não os mais ricos. <small class="note">Essas são críticas e interpretações, não estão escritas no plano de Flávio.</small>
+        </div>
+      </div>
+
+      <p class="why" style="margin-top:12px"><b>Em uma frase para comparar:</b> Lula quer manter a regra atual e fechar a conta com crescimento e imposto sobre os mais ricos; Flávio quer cortar despesas e trocar a regra por uma voltada à dívida.</p>
+    </article>
+
   </div>
 </section>
 
@@ -482,11 +663,11 @@ small.note{color:var(--muted);display:block;margin-top:8px;font-size:13px}
     <div class="card col out">
       <h3><span class="dot d-red"></span>O que pressiona a conta</h3>
       <ul>
-        <li><strong>Teto de crescimento do gasto</strong>: pelo arcabouço, a despesa só cresce entre 0,6% e 2,5% acima da inflação ao ano.</li>
-        <li><strong>Despesas obrigatórias</strong> que crescem sozinhas (salário mínimo real, aposentadorias, BPC, pisos), o que comprime o restante, segundo análises de economistas.</li>
-        <li><strong>Promessas novas</strong>: exames na Farmácia Popular, tempo integral, 111 IFs, MCMV ampliado, Novo PAC 2.</li>
-        <li><strong>Dívida bruta</strong>: 82,9% do PIB em agosto (Banco Central), contra 71,4% no início do governo, segundo a Gazeta do Povo.</li>
-        <li><strong>Emendas</strong>: R$ 50 bi, cerca de 1/5 do orçamento discricionário.</li>
+        <li><strong>Teto de crescimento do gasto</strong>: pelo arcabouço, a despesa só cresce entre 0,6% e 2,5% acima da inflação ao ano. <a class="lk" href="#t-arcabouco">o que é?</a></li>
+        <li><strong>Despesas obrigatórias</strong> que crescem sozinhas (salário mínimo real, aposentadorias, BPC, pisos), o que comprime o restante, segundo análises de economistas. <a class="lk" href="#t-obrigatorias">o que é?</a></li>
+        <li><strong>Promessas novas</strong>: exames na Farmácia Popular, tempo integral, 111 IFs, MCMV ampliado, Novo PAC 2. <a class="lk" href="#t-novas">o que é?</a></li>
+        <li><strong>Dívida bruta</strong>: 82,9% do PIB em agosto (Banco Central), contra 71,4% no início do governo, segundo a Gazeta do Povo. <a class="lk" href="#t-divida">o que é?</a></li>
+        <li><strong>Emendas</strong>: R$ 50 bi, cerca de 1/5 do orçamento discricionário. <a class="lk" href="#t-emendas">o que é?</a></li>
       </ul>
     </div>
   </div>
@@ -588,7 +769,7 @@ small.note{color:var(--muted);display:block;margin-top:8px;font-size:13px}
     <table>
       <thead><tr><th>Tema</th><th>Lula (PT)</th><th>Flávio (PL)</th></tr></thead>
       <tbody>
-        <tr><td><strong>Regra fiscal</strong></td><td>Manter o arcabouço fiscal</td><td>"Tesouraço": reformular as regras para estabilizar e reduzir a dívida</td></tr>
+        <tr><td><strong>Regra fiscal</strong></td><td>Manter o arcabouço fiscal <a class="lk" href="#t-arcabouco">o que é?</a></td><td>"Tesouraço": reformular as regras para estabilizar e reduzir a dívida <a class="lk" href="#tesouraco">o que é?</a></td></tr>
         <tr><td><strong>Papel do Estado</strong></td><td>Crédito público, compras e política industrial</td><td>Limitar o crédito subsidiado do Tesouro; privatizações avaliadas caso a caso</td></tr>
         <tr><td><strong>Máquina pública</strong></td><td>Serviços compartilhados; sem lista de cortes</td><td>Cortar ao menos 10 ministérios e reduzir cargos comissionados</td></tr>
         <tr><td><strong>Jornada</strong></td><td>PEC 221: 40h, escala 5x2, sem redução de salário</td><td>PEC 12: jornada menor opcional, com pagamento proporcional</td></tr>
@@ -625,6 +806,7 @@ small.note{color:var(--muted);display:block;margin-top:8px;font-size:13px}
       <li>Votação da PEC no Senado: <a href="https://bpmoney.com.br/?p=424963">bpmoney</a>, <a href="https://diariodonordeste.verdesmares.com.br/pontopoder/alcolumbre-confirma-votacao-do-fim-da-escala-6x1-e-diz-que-seguira-rito-no-senado-1.3796974">Diário do Nordeste</a>, <a href="https://monitormercantil.com.br/aprovacao-do-fim-da-6x1-na-camara-joga-pressao-sobre-senado-e-bolsonaristas/">Monitor Mercantil</a></li>
       <li>Serviço público e reforma administrativa: <a href="https://folha.qconcursos.com/n/eleicoes-2026-segundo-turno-propostas-concursos">Folha/QConcursos</a></li>
       <li>Visão geral dos planos: <a href="https://www.folhavitoria.com.br/eleicoes/eleicoes-2026-veja-as-propostas-de-governo-de-flavio-bolsonaro-e-lula/">Folha Vitória</a></li>
+      <li>Tesouraço: <a href="https://forbes.com.br/forbes-money/2026/10/tesouraco-flavio-bolsonaro-plano-economico/">Forbes Brasil</a>, <a href="https://investnews.com.br/economia/planos-de-flavio-bolsonaro-para-a-economia/amp/">InvestNews</a>, <a href="https://www.spacemoney.com.br/politica/plano-governo-flavio-bolsonaro-economia/">Space Money</a>, <a href="https://www.opovo.com.br/noticias/politica/2026/08/04/amp/flavio-bolsonaro-vou-promover-tesouraco-e-desburocratizacao-com-reducao-de-carga-tributaria.html">O Povo/Agência Estado</a>; críticas: <a href="https://pt.org.br/__trashed-13/">site do PT</a> e <a href="https://www.poder360.com.br/opiniao/salto-no-desconhecido/">coluna no Poder360</a></li>
       <li>Análise fiscal: <a href="https://allangallo.substack.com/p/o-silencio-fiscal-do-programa-economico">"O silêncio fiscal do programa econômico de Lula"</a></li>
     </ul>
     <p>Eixos 10 a 13 do programa (energia, clima, trabalho e soberania) foram lidos por trechos e reportagens, com menos detalhe que os eixos 1 a 9.</p>
