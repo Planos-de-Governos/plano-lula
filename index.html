@@ -182,6 +182,12 @@ tr:last-child td{border-bottom:none}
 .mini .m-plan b.l{color:var(--blue)} .mini .m-say b.l{color:var(--green)} .mini .m-crit b.l{color:var(--accent)} .mini .m-open b.l{color:var(--gold)}
 .mini ul{margin:0;padding-left:18px}
 .mini li{margin:3px 0}
+.mini .m-cmp{background:var(--surface)}
+.mini .m-cmp b.l{color:var(--muted)}
+.causa{border-left:6px solid var(--accent);margin-top:16px;scroll-margin-top:80px}
+.causa h3{font-size:20px;margin:0 0 6px}
+.causa .one{margin:0 0 4px;font-size:15px}
+.causa .sec{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--accent);margin:16px 0 0}
 
 footer{padding:30px 0 50px;color:var(--muted);font-size:14px}
 footer ul{padding-left:18px}
@@ -209,6 +215,7 @@ small.note{color:var(--muted);display:block;margin-top:8px;font-size:13px}
     <a href="#resumo">Resumo</a>
     <a href="#termos">Entenda os termos</a>
     <a href="#areas">Por área</a>
+    <a href="#causas">Mulheres, ambiente e animais</a>
     <a href="#como">Como faria</a>
     <a href="#cortes">E os cortes?</a>
     <a href="#perguntas">Perguntas difíceis</a>
@@ -395,9 +402,11 @@ small.note{color:var(--muted);display:block;margin-top:8px;font-size:13px}
     <button role="tab" aria-selected="false" data-tab="p-saude">Saúde</button>
     <button role="tab" aria-selected="false" data-tab="p-edu">Educação</button>
     <button role="tab" aria-selected="false" data-tab="p-seg">Segurança</button>
+    <button role="tab" aria-selected="false" data-tab="p-mul">Mulheres</button>
     <button role="tab" aria-selected="false" data-tab="p-mor">Moradia e cidades</button>
     <button role="tab" aria-selected="false" data-tab="p-est">Estado e democracia</button>
-    <button role="tab" aria-selected="false" data-tab="p-clima">Clima, energia e soberania</button>
+    <button role="tab" aria-selected="false" data-tab="p-clima">Meio ambiente e clima</button>
+    <button role="tab" aria-selected="false" data-tab="p-ani">Animais</button>
   </div>
 
   <div class="card panel on" id="p-trab">
@@ -486,17 +495,156 @@ small.note{color:var(--muted);display:block;margin-top:8px;font-size:13px}
     <div class="how"><b>Como:</b> mudar emendas, sistema político e regras de plataformas exige o <strong>Congresso</strong>. O plano apenas propõe "debater" as emendas, sem fixar uma redução.</div>
   </div>
 
+  <div class="card panel" id="p-mul">
+    <ul>
+      <li>Dar continuidade ao <strong>Pacto Nacional de Prevenção aos Feminicídios</strong> como guia da política contra a violência.</li>
+      <li><strong>Concluir 30 Casas da Mulher Brasileira</strong> e 15 Centros de Referência da Mulher Brasileira.</li>
+      <li>Ampliar as <strong>Salas Lilás</strong> e o <strong>monitoramento de agressores</strong>.</li>
+      <li><strong>Capacitar as forças de segurança</strong> para melhorar o atendimento às vítimas.</li>
+      <li>Combater o machismo e o sexismo e garantir a <strong>autonomia econômica</strong> das mulheres, com cuidado compartilhado entre Estado, sociedade, homens e mulheres.</li>
+    </ul>
+    <div class="how"><b>Como:</b> a rede de acolhimento é construída com orçamento federal em parceria com estados e municípios. Punições e mudanças de lei dependem do <strong>Congresso</strong>, e as medidas protetivas dependem da <strong>Justiça</strong>. <a class="lk" href="#mulheres">ver detalhes</a></div>
+  </div>
+
   <div class="card panel" id="p-clima">
     <ul>
-      <li><strong>Transição energética</strong>: leilões de transmissão, baterias, modernização de hidrelétricas.</li>
-      <li><strong>Nordeste como polo industrial</strong> de energia renovável (siderurgia verde, fertilizantes, hidrogênio de baixo carbono).</li>
-      <li>Regulamentar o <strong>mercado de carbono</strong> (SBCE) e usar a taxonomia sustentável para atrair capital.</li>
-      <li>Manter o <strong>Fundo Amazônia</strong>; o plano afirma que o desmatamento caiu ao menor nível da série.</li>
+      <li><strong>Desmatamento líquido zero até 2030</strong>, com planos de controle, manejo integrado do fogo e fiscalização por satélite e inteligência artificial.</li>
+      <li><strong>Adaptação às mudanças climáticas</strong> como eixo permanente: prevenção de desastres, planos contra calor extremo, segurança hídrica e contenção de encostas.</li>
+      <li><strong>Financiamento climático</strong>: Fundo Clima, Eco Invest e Fundo Florestas Tropicais para Sempre.</li>
+      <li><strong>Energia</strong>: mais renováveis, baterias, leilões de transmissão e redução do carvão, ao lado da expansão do petróleo e gás pela Petrobras.</li>
       <li><strong>Minerais críticos e terras raras</strong>: beneficiar no país em vez de só exportar.</li>
-      <li>Soberania em várias frentes (digital, energética, alimentar, defesa) e protagonismo internacional.</li>
     </ul>
-    <div class="how"><b>Como:</b> mistura de regulação (Executivo e Congresso), crédito público e investimento privado (Eco Invest). <small class="note">Nota: li esses eixos (10 a 13) por trechos e reportagens, com menos detalhe que os demais.</small></div>
+    <div class="how"><b>Como:</b> fiscalização e planos do Executivo (Ibama, ICMBio, Polícia Federal), crédito e fundos climáticos, e cooperação com estados, municípios e setor produtivo. <a class="lk" href="#ambiente">ver detalhes</a></div>
   </div>
+
+  <div class="card panel" id="p-ani">
+    <ul>
+      <li><strong>Ampliar o ProPatinhas</strong>, programa federal de castração gratuita e proteção de cães e gatos.</li>
+      <li>Meta de <strong>675 mil castrações</strong>, segundo reportagem sobre o plano.</li>
+      <li>Manter o <strong>SinPatinhas</strong>, o cadastro nacional de animais domésticos ("RG Animal").</li>
+      <li>Decreto <strong>"Justiça por Orelha"</strong>, com marcação na orelha dos animais castrados.</li>
+      <li>Fortalecer as ações contra <strong>maus-tratos</strong>.</li>
+    </ul>
+    <div class="how"><b>Como:</b> programas federais que dependem da <strong>adesão dos municípios</strong> e de orçamento. Leis penais contra maus-tratos dependem do Congresso. <a class="lk" href="#animais">ver detalhes</a></div>
+  </div>
+</section>
+
+<!-- MULHERES, AMBIENTE E ANIMAIS -->
+<section id="causas">
+  <h2>Mulheres, meio ambiente e animais</h2>
+  <p class="sub">Temas que muita gente cobra e que merecem espaço próprio. Em cada um: o que o plano promete, o que o governo já fez, como seria feito, o contraste com o adversário e o que ainda está em aberto.</p>
+
+  <article class="card causa" id="mulheres">
+    <h3>Mulheres e combate ao feminicídio</h3>
+    <p class="one"><strong>Feminicídio</strong> é o assassinato de uma mulher por ser mulher, em geral no contexto de violência doméstica ou por desprezo à condição de mulher. É crime específico desde 2015.</p>
+    <div class="mini">
+      <div class="m-plan"><b class="l">O que o plano promete</b>
+        <ul>
+          <li>Continuar o Pacto Nacional de Prevenção aos Feminicídios</li>
+          <li>Concluir 30 Casas da Mulher Brasileira e 15 Centros de Referência da Mulher Brasileira</li>
+          <li>Ampliar as Salas Lilás e o monitoramento de agressores</li>
+          <li>Capacitar as forças de segurança para atender as vítimas</li>
+          <li>Prioridade no combate à violência contra mulheres, incluindo a que acontece na internet</li>
+          <li>Combater machismo e sexismo e garantir autonomia econômica</li>
+        </ul>
+      </div>
+      <div class="m-say"><b class="l">O que o governo já fez</b>
+        <ul>
+          <li>Pacto entre os Três Poderes contra o feminicídio, com Executivo, Legislativo e Judiciário</li>
+          <li>Três leis sancionadas em abril de 2026: misoginia equiparada ao racismo, penas maiores para lesão corporal contra a mulher e porte de spray de pimenta para defesa pessoal</li>
+          <li>Lei da Igualdade Salarial (2023) e retomada do programa Mulher Viver sem Violência</li>
+        </ul>
+      </div>
+      <div class="m-open"><b class="l">Como seria feito</b>
+        As casas e centros são construídos com recursos federais em parceria com estados e municípios. Leis e punições dependem do Congresso. Medidas protetivas e julgamentos dependem da Justiça, e por isso existe o pacto entre os Poderes. Segundo material da campanha do PT, a ideia é também dobrar a rede das Casas da Mulher Brasileira e ampliar mutirões para prender agressores.
+      </div>
+      <div class="m-cmp"><b class="l">Contraste com Flávio</b>
+        O plano dele propõe monitorar com tornozeleira eletrônica os agressores que tenham medida protetiva, ampliar os espaços de acolhimento, cumprir integralmente as penas e endurecer punições para crimes sexuais, com ênfase em autonomia financeira e empreendedorismo. Uma especialista ouvida pelo portal WSCOM avalia que a autonomia econômica é importante, mas não substitui políticas estruturadas de prevenção.
+      </div>
+    </div>
+    <div class="callout" style="margin-bottom:12px"><strong class="k">Pontos em aberto</strong><p>Nas reportagens que li, o plano não traz meta numérica de redução de feminicídios. As casas dependem de funcionamento local, e as medidas protetivas dependem de polícia e Justiça. Evite prometer um número.</p></div>
+    <p class="sec">Entenda os termos</p>
+    <div class="mini">
+      <div class="m-cmp"><b class="l">Casa da Mulher Brasileira</b>Espaço que reúne, no mesmo lugar, delegacia, atendimento psicológico e social, apoio jurídico e abrigo temporário.</div>
+      <div class="m-cmp"><b class="l">Medida protetiva de urgência</b>Ordem da Justiça, prevista na Lei Maria da Penha, que por exemplo proíbe o agressor de se aproximar da vítima.</div>
+      <div class="m-cmp"><b class="l">Sala Lilás</b>Espaço de atendimento acolhedor para mulheres vítimas de violência em serviços públicos como delegacias, hospitais e unidades de perícia.</div>
+      <div class="m-cmp"><b class="l">Misoginia</b>Ódio ou aversão às mulheres. A nova lei a trata como crime de discriminação, como o racismo.</div>
+    </div>
+  </article>
+
+  <article class="card causa" id="ambiente">
+    <h3>Meio ambiente e clima</h3>
+    <p class="one">É o tema em que os dois planos mais se diferenciam: o clima aparece cerca de 38 vezes no programa de Lula e uma vez no de Flávio, segundo levantamento do Observatório do Clima.</p>
+    <div class="mini">
+      <div class="m-plan"><b class="l">O que o plano promete</b>
+        <ul>
+          <li>Reafirma o desmatamento líquido zero até 2030, com planos de prevenção e controle e o Plano Nacional de Manejo Integrado do Fogo</li>
+          <li>Garantir a efetividade do Código Florestal e da Lei da Mata Atlântica</li>
+          <li>Destinar terras públicas a unidades de conservação, territórios indígenas e quilombolas ou assentamentos, e reforçar a regularização fundiária</li>
+          <li>Pagamento por Serviços Ambientais e restauração biocultural</li>
+          <li>Fiscalização com satélite e IA, e rastreabilidade das cadeias produtivas</li>
+          <li>Adaptação climática como eixo permanente, planos contra calor extremo e mais investimento em prevenção de desastres</li>
+          <li>Segurança hídrica: revitalizar bacias e proteger contra cheias</li>
+          <li>Energia: renováveis, baterias, leilões de transmissão, menos carvão e mais biocombustíveis</li>
+        </ul>
+      </div>
+      <div class="m-say"><b class="l">O que o governo já fez</b>
+        Segundo análise publicada pelo Portal Brasil Criativo, o desmatamento na Amazônia caiu cerca de 50% a partir de 2023, sob a ministra Marina Silva. O governo também desenvolveu o Plano Clima e programas de adaptação urbana.
+      </div>
+      <div class="m-open"><b class="l">Como seria feito</b>
+        Fiscalização e planos pelo Executivo (Ibama, ICMBio, Polícia Federal), crédito do Fundo Clima e do Eco Invest, e acordos com estados, municípios e setor produtivo para rastrear as cadeias. O Fundo Florestas Tropicais para Sempre ainda depende de investidores internacionais.
+      </div>
+      <div class="m-cmp"><b class="l">Contraste com Flávio</b>
+        O plano dele também fala em preservar biomas, combater desmatamento e queimadas e reforçar a fiscalização. A diferença, segundo as análises, é que o clima não é um eixo do programa e o foco está em gestão de desastres e ativos ambientais de mercado.
+      </div>
+    </div>
+    <div class="callout red" style="margin-bottom:12px"><strong class="k">Ponto de tensão (pergunta difícil)</strong><p>O mesmo plano defende que a Petrobras amplie a exploração de petróleo, em terra e no mar, com "cuidados socioambientais ainda maiores". Ele não cita nominalmente a Margem Equatorial. Análises apontam contradição com a meta climática. A resposta do plano é tratar como uma transição gradual, com redução progressiva dos combustíveis fósseis, preservando a segurança energética.</p></div>
+    <p class="sec">Entenda os termos</p>
+    <div class="mini">
+      <div class="m-cmp"><b class="l">Desmatamento líquido zero</b>O que ainda for desmatado é compensado por restauração de área equivalente, e o saldo final é zero. É diferente de "desmatamento zero absoluto".</div>
+      <div class="m-cmp"><b class="l">Mitigação x adaptação</b>Mitigar é reduzir as emissões que causam o aquecimento. Adaptar é preparar cidades e pessoas para chuva, calor e seca extremos.</div>
+      <div class="m-cmp"><b class="l">NDC</b>A meta climática que cada país apresenta à ONU para reduzir suas emissões.</div>
+      <div class="m-cmp"><b class="l">Pagamento por Serviços Ambientais</b>Pagar a quem conserva floresta, nascentes ou biodiversidade.</div>
+      <div class="m-cmp"><b class="l">Eco Invest</b>Programa que atrai investimento privado para projetos de transição ecológica, com proteção contra a variação do dólar.</div>
+      <div class="m-cmp"><b class="l">Fundo Florestas Tropicais para Sempre</b>Fundo internacional que pagaria os países por manter suas florestas em pé.</div>
+    </div>
+  </article>
+
+  <article class="card causa" id="animais">
+    <h3>Proteção animal</h3>
+    <p class="one">Neste tema, o centro da proposta são cães e gatos, com foco em castração gratuita, cadastro e combate aos maus-tratos.</p>
+    <div class="mini">
+      <div class="m-plan"><b class="l">O que o plano promete</b>
+        <ul>
+          <li>Ampliar o ProPatinhas (castração, vacinação e proteção de cães e gatos)</li>
+          <li>Meta de 675 mil castrações, segundo reportagem</li>
+          <li>Manter o SinPatinhas, o cadastro nacional de animais domésticos</li>
+          <li>Decreto "Justiça por Orelha"</li>
+          <li>Fortalecer as ações contra maus-tratos</li>
+        </ul>
+      </div>
+      <div class="m-say"><b class="l">O que o governo já fez</b>
+        <ul>
+          <li>Decreto que criou o ProPatinhas e o SinPatinhas, com castração gratuita, microchipagem e o "RG Animal" com QR Code</li>
+          <li>Lei Amar (Lei 15.355/2026): resgate e acolhimento de animais em desastres</li>
+          <li>Lei do Julho Dourado (Lei 15.322/2026): campanha de saúde e adoção</li>
+        </ul>
+      </div>
+      <div class="m-open"><b class="l">Como seria feito</b>
+        Pelo Ministério do Meio Ambiente, com Ibama e ICMBio, e com a <strong>adesão das prefeituras</strong> ao ProPatinhas e ao SinPatinhas. Leis sobre maus-tratos dependem do Congresso, e a fiscalização no dia a dia é local.
+      </div>
+      <div class="m-cmp"><b class="l">Contraste com Flávio</b>
+        Segundo o ND Mais e outras reportagens, o programa dele não tem capítulo nem propostas específicas para animais. Ele aborda a questão ambiental, como biomas, queimadas e fiscalização.
+      </div>
+    </div>
+    <div class="callout" style="margin-bottom:12px"><strong class="k">Pontos em aberto</strong><p>Uma estimativa citada na lei do Julho Dourado fala em mais de 30 milhões de animais abandonados no país, então 675 mil castrações são uma fração disso. As reportagens que li não deixam claro o prazo e o orçamento, e não encontrei propostas para animais de produção (criados para alimentação).</p></div>
+    <p class="sec">Entenda os termos</p>
+    <div class="mini">
+      <div class="m-cmp"><b class="l">Manejo populacional ético</b>Controlar a população de cães e gatos sem sacrifício, com castração, vacinação e adoção.</div>
+      <div class="m-cmp"><b class="l">SinPatinhas e RG Animal</b>Cadastro nacional em que o tutor registra o animal e recebe um documento com QR Code, útil para achar um animal perdido.</div>
+      <div class="m-cmp"><b class="l">Justiça por Orelha</b>Segundo a reportagem, é o nome do decreto que prevê marcar a orelha de animais castrados, para evitar nova castração e economizar recursos.</div>
+    </div>
+  </article>
 </section>
 
 <!-- COMO FARIA -->
@@ -807,9 +955,12 @@ small.note{color:var(--muted);display:block;margin-top:8px;font-size:13px}
       <li>Serviço público e reforma administrativa: <a href="https://folha.qconcursos.com/n/eleicoes-2026-segundo-turno-propostas-concursos">Folha/QConcursos</a></li>
       <li>Visão geral dos planos: <a href="https://www.folhavitoria.com.br/eleicoes/eleicoes-2026-veja-as-propostas-de-governo-de-flavio-bolsonaro-e-lula/">Folha Vitória</a></li>
       <li>Tesouraço: <a href="https://forbes.com.br/forbes-money/2026/10/tesouraco-flavio-bolsonaro-plano-economico/">Forbes Brasil</a>, <a href="https://investnews.com.br/economia/planos-de-flavio-bolsonaro-para-a-economia/amp/">InvestNews</a>, <a href="https://www.spacemoney.com.br/politica/plano-governo-flavio-bolsonaro-economia/">Space Money</a>, <a href="https://www.opovo.com.br/noticias/politica/2026/08/04/amp/flavio-bolsonaro-vou-promover-tesouraco-e-desburocratizacao-com-reducao-de-carga-tributaria.html">O Povo/Agência Estado</a>; críticas: <a href="https://pt.org.br/__trashed-13/">site do PT</a> e <a href="https://www.poder360.com.br/opiniao/salto-no-desconhecido/">coluna no Poder360</a></li>
+      <li>Mulheres e feminicídio: <a href="https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/conheca-propostas-de-flavio-e-lula-para-seguranca-publica">Agência Brasil</a>, <a href="https://theconversation.com/mulheres-e-seguranca-publica-o-feminicidio-em-foco-na-campanha-eleitoral-293744">The Conversation</a>, <a href="https://wscom.com.br/destaque/destaque-principal/2026/10/08/propostas-mulheres-lula-flavio-bolsonaro/">WSCOM</a>, <a href="https://www.cnnbrasil.com.br/politica/governo-lula-sanciona-pacote-visando-combate-a-violencia-contra-as-mulheres/">CNN Brasil</a>, <a href="https://pt.org.br/lula-coloca-as-brasileiras-no-centro-de-seu-projeto-para-o-pais-agora-e-no-futuro/">site do PT</a> (material da campanha)</li>
+      <li>Meio ambiente e clima: <a href="https://sbtnews.sbt.com.br/noticia/eleicoes/meio-ambiente-e-energia-veja-propostas-de-lula-na-integra">SBT News (trechos do programa)</a>, <a href="https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-10/veja-como-os-planos-de-governo-de-flavio-e-lula-tratam-meio-ambiente">Agência Brasil</a>, <a href="https://portalbrasilcriativo.com.br/politica-eleicoes-2026-planos-governo-lula-flavio-bolsonaro-mudancas-climaticas/">Portal Brasil Criativo</a>, <a href="https://istoe.com.br/lula-flavio-bolsonaro-propostas-meio-ambiente-2026">IstoÉ</a></li>
+      <li>Proteção animal: <a href="https://ndmais.com.br/politica/planos-governo-2026-propostas-animais/">ND Mais</a>, <a href="https://sampi.net.br/piracicaba/noticias/3009352/cidade/2026/10/veja-as-propostas-de-lula-e-flavio-para-os-animais">JP1/Sampi</a>, <a href="https://fpabramo.org.br/governo-lanca-politica-nacional-para-proteger-caes-e-gatos-e-combater-maus-tratos/">Fundação Perseu Abramo</a>, <a href="https://agenciabrasil.ebc.com.br/radioagencia-nacional/geral/audio/2026-03/lula-sanciona-lei-para-protecao-de-animais-afetados-por-desastres">Agência Brasil (Lei Amar)</a></li>
       <li>Análise fiscal: <a href="https://allangallo.substack.com/p/o-silencio-fiscal-do-programa-economico">"O silêncio fiscal do programa econômico de Lula"</a></li>
     </ul>
-    <p>Eixos 10 a 13 do programa (energia, clima, trabalho e soberania) foram lidos por trechos e reportagens, com menos detalhe que os eixos 1 a 9.</p>
+    <p>Os eixos 1 a 9 do programa foram lidos em detalhe. Meio ambiente, mulheres e proteção animal foram complementados com reportagens que citam trechos do programa. Fontes do site do PT são material da campanha e por isso foram marcadas como tal.</p>
   </div>
 </footer>
 
